@@ -58,19 +58,20 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="events"
         options={{
-          title: 'Home',
+          title: 'Events',
           tabBarIcon: ({ focused }) => (
             <View style={styles.iconWrapper}>
               <AnimatedCircle focused={focused}>
-                <Icon size={28} name="home" color="#fff" />
+                <Icons size={28} name="event" color="#fff" />
               </AnimatedCircle>
-              {!focused && <Icon size={28} name="home" color="#999" />}
+              {!focused && <Icons size={28} name="event" color="#999" />}
             </View>
           ),
         }}
       />
+      
       <Tabs.Screen
         name="places"
         options={{
@@ -85,20 +86,7 @@ export default function TabLayout() {
           ),
         }}
       />
-      <Tabs.Screen
-        name="events"
-        options={{
-          title: 'Events',
-          tabBarIcon: ({ focused }) => (
-            <View style={styles.iconWrapper}>
-              <AnimatedCircle focused={focused}>
-                <Icons size={28} name="event" color="#fff" />
-              </AnimatedCircle>
-              {!focused && <Icons size={28} name="event" color="#999" />}
-            </View>
-          ),
-        }}
-      />
+      
       <Tabs.Screen
         name="about"
         options={{
@@ -123,7 +111,7 @@ const PADDING = 8;
 const styles = StyleSheet.create({
   iconWrapper: {
     width: ICON_SIZE + PADDING * 2,
-    height: ICON_SIZE + PADDING * 2,
+    height: ICON_SIZE + PADDING * 5,
     justifyContent: 'center',
     alignItems: 'center',
   },
