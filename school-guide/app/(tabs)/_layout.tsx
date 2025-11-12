@@ -10,7 +10,6 @@ import { useColorScheme } from '@/hooks/use-color-scheme';
 export default function TabLayout() {
   const colorScheme = useColorScheme();
 
-  // Animated Circle Component
   const AnimatedCircle = ({ focused, children }: { focused: boolean; children: React.ReactNode }) => {
     const scale = useRef(new Animated.Value(focused ? 1 : 0)).current;
 

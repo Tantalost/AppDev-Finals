@@ -1,13 +1,6 @@
 import Icon from '@expo/vector-icons/MaterialCommunityIcons';
 import React from 'react';
-import {
-  Image,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { View,Text,StyleSheet,ScrollView,Image,StatusBar,} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const AboutScreen = () => {
@@ -15,27 +8,27 @@ const AboutScreen = () => {
     {
       id: 1,
       name: 'Justine James Alviar',
-      image: require('@/assets/images/justine.png'), // Placeholder
+      image: require('@/assets/images/justine.png'), 
     },
     {
       id: 2,
       name: 'Jayna Sahibul',
-      image: require('@/assets/images/jayn.png'), // Placeholder
+      image: require('@/assets/images/jayn.png'), 
     },
     {
       id: 3,
       name: 'John Lloyd Climaco',
-      image: require('@/assets/images/lloyd.png'), // Placeholder
+      image: require('@/assets/images/lloyd.png'), 
     },
     {
       id: 4,
       name: 'Venn Malali',
-      image: require('@/assets/images/ven.png'), // Placeholder
+      image: require('@/assets/images/ven.png'), 
     },
     {
       id: 5,
       name: 'Stephanie Villamor',
-      image: require('@/assets/images/steph.png'), // Placeholder
+      image: require('@/assets/images/steph.png'), 
     },
   ];
 
@@ -48,7 +41,6 @@ const AboutScreen = () => {
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
       >
-        {/* About Section */}
         <View style={styles.section}>
           <Text style={styles.title}>About</Text>
           <Text style={styles.paragraph}>
@@ -62,7 +54,6 @@ const AboutScreen = () => {
           </Text>
         </View>
 
-        {/* Contact Information Section */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Contact Information</Text>
           <View style={styles.contactItem}>
@@ -75,7 +66,6 @@ const AboutScreen = () => {
           </View>
         </View>
 
-        {/* Developer Section */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Developer</Text>
           <Text style={styles.groupName}>CynergyOps Group</Text>

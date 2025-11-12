@@ -1,15 +1,6 @@
 import Icon from '@expo/vector-icons/MaterialCommunityIcons';
 import React from 'react';
-import {
-  Image,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import {View,Text,StyleSheet,ScrollView,TextInput,Image,TouchableOpacity,StatusBar,} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const EventsScreen = () => {
@@ -17,7 +8,7 @@ const EventsScreen = () => {
     title: 'WMSU College Entrance Test',
     time: '7am - 10am',
     location: 'WMSU, Zamboanga City',
-    image: require('@/assets/images/image 146.png'), // Placeholder - replace with actual image
+    image: require('@/assets/images/image 146.png'), 
   };
 
   const upcomingEvents = [
@@ -27,7 +18,7 @@ const EventsScreen = () => {
       time: '8am - 12pm',
       location: 'Grand Astoria Hotel, Zamboanga City',
       date: '16 NOV',
-      image: require('@/assets/images/devfest.jpg'), // Placeholder
+      image: require('@/assets/images/devfest.jpg'), 
     },
     {
       id: 2,
@@ -35,7 +26,7 @@ const EventsScreen = () => {
       time: '1pm - 5pm',
       location: 'WMSU Open Stage',
       date: '16 NOV',
-      image: require('@/assets/images/debate.jpg'), // Placeholder
+      image: require('@/assets/images/debate.jpg'), 
     },
     {
       id: 3,
@@ -43,7 +34,7 @@ const EventsScreen = () => {
       time: '8am - 5pm',
       location: 'WMSU, Zamboanga City',
       date: '1-6 DEC',
-      image: require('@/assets/images/alumni.jpg'), // Placeholder
+      image: require('@/assets/images/alumni.jpg'), 
     },
   ];
 
@@ -51,7 +42,6 @@ const EventsScreen = () => {
     <SafeAreaView style={styles.container} edges={['top']}>
       <StatusBar barStyle="dark-content" />
       
-      {/* Header */}
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Events</Text>
         <TouchableOpacity>
@@ -59,7 +49,6 @@ const EventsScreen = () => {
         </TouchableOpacity>
       </View>
 
-      {/* Search Bar */}
       <View style={styles.searchContainer}>
         <Icon name="magnify" size={20} color="#999" style={styles.searchIcon} />
         <TextInput
@@ -70,7 +59,7 @@ const EventsScreen = () => {
       </View>
 
       <ScrollView showsVerticalScrollIndicator={false}>
-        {/* Today Section */}
+      
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Today</Text>
           <TouchableOpacity style={styles.todayCard}>
@@ -96,7 +85,7 @@ const EventsScreen = () => {
           </TouchableOpacity>
         </View>
 
-        {/* Upcoming Section */}
+       
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Upcoming</Text>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.upcomingScroll}>

@@ -1,17 +1,7 @@
 import Icon from '@expo/vector-icons/MaterialCommunityIcons';
 import { Link } from 'expo-router';
 import React, { useState } from 'react';
-import {
-  FlatList,
-  Image,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import {View,Text,StyleSheet,ScrollView,TextInput,Image,TouchableOpacity,StatusBar,FlatList,} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const PlacesScreen = () => {
@@ -87,7 +77,6 @@ const PlacesScreen = () => {
     <SafeAreaView style={styles.container} edges={['top']}>
       <StatusBar barStyle="dark-content" />
 
-      {/* Header */}
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Discover Places</Text>
         <TouchableOpacity>
@@ -95,7 +84,6 @@ const PlacesScreen = () => {
         </TouchableOpacity>
       </View>
 
-      {/* Search Bar */}
       <View style={styles.searchContainer}>
         <Icon name="magnify" size={20} color="#999" style={styles.searchIcon} />
         <TextInput
@@ -105,7 +93,6 @@ const PlacesScreen = () => {
         />
       </View>
 
-      {/* Filter Buttons */}
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -133,7 +120,6 @@ const PlacesScreen = () => {
         ))}
       </ScrollView>
 
-      {/* Scrollable Featured Places */}
       <ScrollView style={styles.featuredScroll} showsVerticalScrollIndicator={false}>
         <View style={styles.featuredSection}>
           <Text style={styles.featuredTitle}>
@@ -197,7 +183,7 @@ const styles = StyleSheet.create({
   },
     filterContainer: {
     marginBottom: 8,
-    maxHeight: 48, // keeps the filter bar compact
+    maxHeight: 48, 
   },
   filterContent: {
     paddingHorizontal: 20,
@@ -205,7 +191,7 @@ const styles = StyleSheet.create({
   },
   filterButton: {
     paddingHorizontal: 14,
-    paddingVertical: 6, // slimmer height
+    paddingVertical: 6, 
     borderRadius: 16,
     backgroundColor: '#E0E0E0',
     marginRight: 8,
