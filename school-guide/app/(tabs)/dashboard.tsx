@@ -1,8 +1,8 @@
+import Icon from '@expo/vector-icons/MaterialCommunityIcons';
+import { Link } from 'expo-router';
 import React from 'react';
 import {View,Text,StyleSheet,ScrollView,TouchableOpacity,StatusBar,} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Icon from '@expo/vector-icons/MaterialCommunityIcons';
-import { Link } from 'expo-router';
 
 const DashboardScreen = () => {
   return (

@@ -1,7 +1,7 @@
 import Icon from '@expo/vector-icons/MaterialCommunityIcons';
 import Icons from '@expo/vector-icons/MaterialIcons';
 import { Tabs } from 'expo-router';
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Animated, StyleSheet, View } from 'react-native';
 
 import { HapticTab } from '@/components/haptic-tab';
