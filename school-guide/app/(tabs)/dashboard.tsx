@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  ScrollView,
-  TouchableOpacity,
-  StatusBar,
-} from 'react-native';
+import {View,Text,StyleSheet,ScrollView,TouchableOpacity,StatusBar,} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Icon from '@expo/vector-icons/MaterialCommunityIcons';
 import { Link } from 'expo-router';
@@ -21,13 +14,11 @@ const DashboardScreen = () => {
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
       >
-        {/* Header */}
         <View style={styles.header}>
           <Text style={styles.headerTitle}>Welcome to Campus Guide</Text>
           <Text style={styles.headerSubtitle}>Your essential campus helper</Text>
         </View>
 
-        {/* Quick Actions */}
         <View style={styles.quickActions}>
           <Link href="/(tabs)/events" asChild>
             <TouchableOpacity style={styles.actionCard}>
@@ -46,7 +37,6 @@ const DashboardScreen = () => {
           </Link>
         </View>
 
-        {/* Info Section */}
         <View style={styles.infoSection}>
           <Text style={styles.infoTitle}>Quick Info</Text>
           <Text style={styles.infoText}>

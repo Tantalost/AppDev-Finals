@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  View,Text,
-  StyleSheet,
-  ScrollView,
-  Image,
-  TouchableOpacity,
-  StatusBar,
-} from 'react-native';
+import {View,Text,StyleSheet,ScrollView,Image,TouchableOpacity,StatusBar,} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Icon from '@expo/vector-icons/MaterialCommunityIcons';
 import { useRouter, useLocalSearchParams } from 'expo-router';
@@ -125,22 +118,109 @@ const styles = StyleSheet.create({
   borderRadius: 20,
   },
 
-  backButton: { backgroundColor:'rgba(255,255,255,0.9)', borderRadius:20, padding:8 },
-  imageContainer: { width:'100%', height:'40%' },
-  backgroundImage: { width:'100%', height:'100%', backgroundColor:'#E0E0E0' },
-  contentCard: { flex:1, backgroundColor:'#FFF8F8', borderTopLeftRadius:30, borderTopRightRadius:30, marginTop:-30, paddingTop:4 },
-  contentCardContent: { padding:30, paddingBottom:40 },
-  titleSection: { flexDirection:'row', justifyContent:'space-between', alignItems:'center', marginBottom:10 },
-  title: { fontSize:28, fontWeight:'bold', color:'#11181C' },
-  hours: { fontSize:16, color:'#11181C', marginBottom:10 },
-  daysContainer: { flexDirection:'row', alignItems:'center', marginBottom:20 },
-  days: { fontSize:14, color:'#666', marginLeft:8 },
-  description: { fontSize:14, color:'#666', lineHeight:22, marginBottom:30 },
-  servicesTitle: { fontSize:20, fontWeight:'bold', color:'#11181C', marginBottom:15 },
-  servicesGrid: { flexDirection:'row', flexWrap:'wrap', justifyContent:'space-between' },
-  serviceItem: { width:'48%', alignItems:'center', marginBottom:20 },
-  serviceIconContainer: { width:70, height:70, borderRadius:35, backgroundColor:'#FFF5F3', justifyContent:'center', alignItems:'center', marginBottom:10 },
-  serviceName: { fontSize:12, color:'#666', textAlign:'center' },
+  backButton: { 
+    backgroundColor:'rgba(255,255,255,0.9)', 
+    borderRadius:20, padding:8 
+  },
+
+  imageContainer: { 
+    width:'100%', 
+    height:'40%' 
+  },
+
+  backgroundImage: { 
+    width:'100%', 
+    height:'100%', 
+    backgroundColor:'#E0E0E0' 
+  },
+
+  contentCard: { 
+    flex:1, 
+    backgroundColor:'#FFF8F8', 
+    borderTopLeftRadius:30, 
+    borderTopRightRadius:30, 
+    marginTop:-30, 
+    paddingTop:4 
+  },
+
+  contentCardContent: {
+    padding:30, 
+    paddingBottom:40 
+  },
+
+  titleSection: { 
+    flexDirection:'row', 
+    justifyContent:'space-between', 
+    alignItems:'center', 
+    marginBottom:10 
+  },
+
+  title: { 
+    fontSize:28, 
+    fontWeight:'bold', 
+    color:'#11181C' 
+  },
+
+  hours: { 
+    fontSize:16, 
+    color:'#11181C', 
+    marginBottom:10 
+  },
+
+  daysContainer: { 
+    flexDirection:'row', 
+    alignItems:'center', 
+    marginBottom:20 
+  },
+
+  days: { 
+    fontSize:14, 
+    color:'#666', 
+    marginLeft:8 
+  },
+
+  description: { 
+    fontSize:14, 
+    color:'#666', 
+    lineHeight:22,
+    marginBottom:30 
+    },
+
+  servicesTitle: { 
+    fontSize:20, 
+    fontWeight:'bold', 
+    color:'#11181C', 
+    marginBottom:15 
+  },
+
+  servicesGrid: { 
+    flexDirection:'row', 
+    flexWrap:'wrap', 
+    justifyContent:'space-between' 
+  },
+
+  serviceItem: { 
+    width:'48%', 
+    alignItems:'center', 
+    marginBottom:20 
+  },
+
+  serviceIconContainer: { 
+    width:70, 
+    height:70, 
+    borderRadius:35, 
+    backgroundColor:'#FFF5F3', 
+    justifyContent:'center', 
+    alignItems:'center', 
+    marginBottom:10 
+  },
+
+  serviceName: { 
+    fontSize:12, 
+    color:'#666', 
+    textAlign:'center' 
+  },
+
 });
 
 export default PlaceDetailsScreen;
