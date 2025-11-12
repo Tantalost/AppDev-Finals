@@ -44,9 +44,6 @@ const EventsScreen = () => {
 
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Events</Text>
-        <TouchableOpacity>
-          <Icon name="bookmark" size={28} color="#FF4444" />
-        </TouchableOpacity>
       </View>
 
       <View style={styles.searchContainer}>
