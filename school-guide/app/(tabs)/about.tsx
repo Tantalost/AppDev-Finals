@@ -1,14 +1,14 @@
+import Icon from '@expo/vector-icons/MaterialCommunityIcons';
 import React from 'react';
 import {
-  View,
-  Text,
-  StyleSheet,
-  ScrollView,
   Image,
+  ScrollView,
   StatusBar,
+  StyleSheet,
+  Text,
+  View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Icon from '@expo/vector-icons/MaterialCommunityIcons';
 
 const AboutScreen = () => {
   const developers = [

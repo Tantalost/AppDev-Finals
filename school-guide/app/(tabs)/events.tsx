@@ -1,16 +1,16 @@
+import Icon from '@expo/vector-icons/MaterialCommunityIcons';
 import React from 'react';
 import {
-  View,
-  Text,
-  StyleSheet,
-  ScrollView,
-  TextInput,
   Image,
-  TouchableOpacity,
+  ScrollView,
   StatusBar,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Icon from '@expo/vector-icons/MaterialCommunityIcons';
 
 const EventsScreen = () => {
   const todayEvent = {

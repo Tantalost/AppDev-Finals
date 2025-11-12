@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  ScrollView,
-  TextInput,
-  Image,
-  TouchableOpacity,
-  StatusBar,
-  FlatList,
-} from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import Icon from '@expo/vector-icons/MaterialCommunityIcons';
 import { Link } from 'expo-router';
+import React, { useState } from 'react';
+import {
+  FlatList,
+  Image,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const PlacesScreen = () => {
   const [selectedFilter, setSelectedFilter] = useState('Canteen');
