@@ -1,8 +1,8 @@
-import React from 'react';
-import {View,Text,StyleSheet,ScrollView,Image,TouchableOpacity,StatusBar,} from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import Icon from '@expo/vector-icons/MaterialCommunityIcons';
-import { useRouter, useLocalSearchParams } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+import React from 'react';
+import { Image, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View, } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const allPlaces = [
   { id: 1, name: 'Main Canteen', 
@@ -78,9 +78,6 @@ const PlaceDetailsScreen = () => {
       <ScrollView style={styles.contentCard} contentContainerStyle={styles.contentCardContent}>
         <View style={styles.titleSection}>
           <Text style={styles.title}>{placeData.name}</Text>
-          <TouchableOpacity>
-            <Icon name="bookmark-outline" size={24} color="#FF6B4A" />
-          </TouchableOpacity>
         </View>
 
         <Text style={styles.hours}>{placeData.hours}</Text>
