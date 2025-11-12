@@ -58,7 +58,7 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name="events"
+        name="index"
         options={{
           title: 'Events',
           tabBarIcon: ({ focused }) => (
